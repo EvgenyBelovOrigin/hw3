@@ -159,7 +159,7 @@ class TransfersKtTest {
     fun transfersKt_mastercardMinTransferFeeCalculation() {
         val cardType = "Maestro"
         val thisMonthTransferredAmount = 0
-        val transferAmount = 10_00
+        val transferAmount = 100_00
         val result = ru.netology.transfer(cardType, thisMonthTransferredAmount, transferAmount)
         assertEquals("Комиссия за перевод: 20.6 руб.", result)
 
